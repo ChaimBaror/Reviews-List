@@ -1,0 +1,64 @@
+/* card.css */
+.card-container {
+  margin-bottom: 20px;
+}
+
+.card-row {
+  display: flex;
+  justify-content: center;
+}
+
+.card-col {
+  width: 100%;
+  max-width: 600px; /* Adjust as needed */
+}
+
+.card {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  overflow: hidden;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.card-info {
+  padding: 1.25rem;
+  position: relative;
+}
+
+.card-info .buttons {
+  display: none;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.card:hover .buttons {
+  display: flex;
+  gap: 8px; /* Adjust the gap between buttons */
+}
+
+.card-image img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.card-info > div {
+  margin-bottom: 10px;
+}
+
+.card-info span {
+  font-weight: bold;
+}
+
+.card-info div {
+  font-size: 16px;
+}
+
+/* Style for avatar inside comments */
+.avatar-comment img {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%; /* Make the avatar circular */
+  margin-right: 10px; /* Add spacing between avatar and comment text */
+}
